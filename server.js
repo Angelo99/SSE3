@@ -5,7 +5,7 @@ var Strategy = require('passport-facebook').Strategy;
  
 passport.use(new Strategy({
     clientID: '332399640621594',
-    clientSecret: 'f71b8463f908b936e3d6130f18980397',
+    clientSecret: 'f71b8463f908b936e3d6130f18980397', //deleted app :)
     callbackURL: 'http://localhost:3000/login/facebook/return'
   },
   function(accessToken, refreshToken, profile, cb) {
