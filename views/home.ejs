@@ -1,0 +1,6 @@
+<% if (!user) { %>
+	<p>Welcome! Please <a href="/login">log in</a>.</p>
+<% } else { %>
+	<p>successfully authenticated. <%= user.displayName %> to get data from resource server please click  <a href="/data?<%= user.id %>">here</a>.</p>
+	 
+<% } %>
